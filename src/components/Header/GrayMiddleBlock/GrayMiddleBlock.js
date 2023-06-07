@@ -173,7 +173,7 @@ const ThirdInnerBlock = styled.div`
     margin-left: 20%;
     height: 40px;
     width: 80%; 
-   /* background-color: aqua; */
+  
 
    @media screen and (max-width: 740px){
     position: absolute;
@@ -187,16 +187,11 @@ const ArrowLeftBlock = styled.div`
     left: 3%;
     width: 24px;
     height: 24px;
-    /* background-color: black; */
+    
     &:hover{
         cursor: pointer;
     }
 
-    /* @media screen and (min-width: 740px){
-        position: absolute;
-        top: 8px;
-        left: 3%;
-    } */
 `
 
 const ArrowLeftTop = styled.div`
@@ -252,17 +247,11 @@ const ArrowRightBlock = styled.div`
     right: 3%;
     width: 24px;
     height: 24px;
-    /* background-color: black;  */
 
     &:hover{
         cursor: pointer;
     }
 
-    /* @media screen and (min-width: 740px){
-        position: absolute;
-        top: 8px;
-        right: 3%;
-    } */
 `
 
 const ArrowRightTop = styled.div`

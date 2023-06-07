@@ -24,7 +24,6 @@ const EmptyDiv = styled.div`
     position: relative;
     top: 1215px;
     height: 50px; 
-    /* visibility: hidden; */
 
     @media screen and (max-width: 740px){
     display: none;

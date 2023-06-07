@@ -14,14 +14,6 @@ const Plus = styled.a`
         &:hover{
             cursor: pointer;
         }
-
-       /*  background:
-          linear-gradient(#fff,#fff),
-          linear-gradient(#fff,#fff),
-          #000;
-        background-position:center;
-        background-size: 50% 2px,2px 50%; 
-        background-repeat:no-repeat; */
     
         background:
           linear-gradient(red,red),
