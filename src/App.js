@@ -1,24 +1,53 @@
-import logo from './logo.svg';
+import { Fragment, useState } from 'react';
 import './App.css';
+import Header from './components/Header/Header';
+import Main from './components/Main/Main';
+import styled from 'styled-components';
+import Footer from './components/Footer/Footer';
+
+const BigBlock = styled.div`
+  position: relative;
+  height: 100%;
+
+  @media screen and (min-width: 741px){
+    margin: auto;
+    width: 740px;
+  }
+
+  @media screen and (max-width: 740px){
+    width: 100%;
+  }
+
+`
 
 function App() {
+
+  const [value, setValue] = useState(false);
+
+
+
+  const objOfNumberDays = {
+    1: 25,
+    2: 26,
+    3: 27,
+    4: 28,
+    5: 29,
+    6: 30,
+    7: 31
+  };
+
+  const onClickHandler = (value) => {
+    setValue(value);
+  }
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BigBlock>
+      <Main handler={onClickHandler}></Main>
+      <Header arr2={objOfNumberDays}></Header >
+      <Footer delete={value}></Footer>
+    </BigBlock >
+
   );
 }
 
