@@ -58,7 +58,6 @@ const Delete = styled.div`
         cursor: pointer;
     }
 `
-
 const Footer = (props) => {
 
     return (
