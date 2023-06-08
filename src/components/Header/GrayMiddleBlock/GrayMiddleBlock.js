@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const MainBlock = styled.div`
     position: fixed;
-    background-color: gray;
+    background-color: #eee;
     top: 50px;
     width: 100%;
     height: 100px;

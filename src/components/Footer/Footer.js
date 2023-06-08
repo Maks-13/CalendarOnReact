@@ -6,7 +6,7 @@ const BlockFooter = styled.div`
     width: 100%;
     height: 50px;
     top: 672px;
-    background-color: white;
+    background-color: #eee;
 
     @media screen and (min-width: 740px){
     margin: auto;
